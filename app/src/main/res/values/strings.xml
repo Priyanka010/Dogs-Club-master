@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Stray dogsapp</string>
+    <string name="drawer_open">open navigation drawer</string>
+    <string name="drawer_close">close navigation drawer</string>
+    <string name="dogs_club">DOGS CLUB</string>
+    <string name="splash_image">Splash image</string>
+    <string name="dog_image">Dog Image</string>
+    <string name="header_image">header image</string>
+    <string name="title_activity_maps">Map</string>
+
+</resources>

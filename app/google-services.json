@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "332154162853",
+    "firebase_url": "https://petnet-b2831.firebaseio.com",
+    "project_id": "petnet-b2831",
+    "storage_bucket": "petnet-b2831.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:332154162853:android:5516ceb25a20631e",
+        "android_client_info": {
+          "package_name": "com.manishab.straydogsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "332154162853-06jbha4jpcsl5vki50cqrjtce8rb17jr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.manishab.straydogsapp",
+            "certificate_hash": "35d528c7119e4f6b4db413319f6ceb1cd9a9ee7a"
+          }
+        },
+        {
+          "client_id": "332154162853-1g34e1sl1r7vqskanpin8ve39tj6ttkp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAA60fLUe4qMp5JMCXHhrlaeLItz1WskmA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332154162853-1g34e1sl1r7vqskanpin8ve39tj6ttkp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

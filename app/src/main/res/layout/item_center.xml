@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="72dp"
+    android:orientation="horizontal"
+    android:padding="4dp">
+
+    <ImageView
+        android:id="@+id/center_img"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        tools:src="@drawable/an"
+        android:layout_weight="1"
+        android:contentDescription="@string/dog_image"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/center_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            style="@style/TextAppearance.AppCompat.Title"
+            tools:text="Cocker Spaniel" />
+        <TextView
+            android:id="@+id/center_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:lines="1"
+            android:ellipsize="end"
+            tools:text="An active, good-natured, sporting dog. And it can be very foody"/>
+
+    </LinearLayout>
+
+</LinearLayout>

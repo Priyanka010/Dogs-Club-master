@@ -1,0 +1,64 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.manishab.straydogsapp.fragment.CenterFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <TextView
+        android:id="@+id/center_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:textSize="40sp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="false"
+        android:textStyle="bold"
+
+
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/center_img"
+
+        />
+
+    <TextView
+        android:textAlignment="viewStart"
+        android:id="@+id/center_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+
+        android:textSize="20sp"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:singleLine="false"
+
+        />
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:backgroundTint="@color/colorAccent"
+            app:fabSize="normal"
+            android:src="@drawable/ic_action_maps"
+            android:id="@+id/mapbutton"
+            />
+    </android.support.design.widget.CoordinatorLayout>
+
+
+
+</FrameLayout>
