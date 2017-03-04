@@ -25,7 +25,7 @@
 
         <TextView
             android:textAlignment="viewStart"
-            android:id="@+id/breed_info"
+            android:id="@+id/breed_feed"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:paddingLeft="10dp"
