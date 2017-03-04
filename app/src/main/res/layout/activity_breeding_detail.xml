@@ -47,8 +47,12 @@
     android:layout_height="wrap_content"
     android:text="Feeding info"
     android:textAlignment="center"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:textSize="24sp"
+    android:textStyle="bold"
     android:textColor="#6c0200"
-    android:textSize="30dp"/>
+    android:padding="12dp"
+   />
         <TextView
             android:id="@+id/feed"
             android:layout_width="match_parent"
