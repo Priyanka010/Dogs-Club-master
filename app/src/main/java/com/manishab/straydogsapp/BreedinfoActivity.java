@@ -1,6 +1,5 @@
 package com.manishab.straydogsapp;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
@@ -14,29 +13,28 @@ import com.squareup.picasso.Picasso;
  */
 
 public class BreedinfoActivity extends AppCompatActivity {
-    ImageView dogImage;
-    TextView dog_name, information;
-    TextView info;
+
     Breed breed;
+
+    ImageView dogImage;
+    TextView info;
+    TextView feed;
+    TextView name;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_breed_detail);
+        setContentView(R.layout.activity_breeding_detail);
 
-        Intent intent = getIntent();
         breed = (Breed) getIntent().getSerializableExtra("breed");
-
-        dogImage = (ImageView) findViewById(R.id.breed_img);
-        dog_name = (TextView) findViewById(R.id.breed_name);
-        information = (TextView) findViewById(R.id.breed_info);
+        dogImage = (ImageView) findViewById(R.id.dog_img);
+        info = (TextView) findViewById(R.id.info);
+        feed = (TextView) findViewById(R.id.feed);
+        name = (TextView) findViewById(R.id.name);
 
         Picasso.with(this).load(breed.getBreed_img()).into(dogImage);
         info.setText(breed.getBreed_info());
-        dog_name.setText(breed.getBreed_name());
-
-
+        name.setText(breed.getBreed_name());
+        feed.setText(breed.getBreed_feed());
     }
 }
-
-

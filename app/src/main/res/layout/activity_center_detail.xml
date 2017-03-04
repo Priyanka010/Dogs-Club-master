@@ -3,55 +3,44 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-
-    tools:context="com.manishab.straydogsapp.fragment.Breedinfofragment"
     android:orientation="vertical"
-    >
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.manishab.straydogsapp.BreedinfoActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/breed_name"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            android:gravity="center"
-            android:textSize="40sp"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:singleLine="false"
-            android:textStyle="bold"
-
-
-            />
-
         <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:id="@+id/breed_img"
-
-            />
-
-        <TextView
-            android:textAlignment="viewStart"
-            android:layout_gravity="start"
-            android:id="@+id/breed_info"
+            android:id="@+id/center_img"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/dog_image"
+            android:src="@android:drawable/ic_menu_rotate"
+            tools:src="@drawable/cockerspaniel" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="12dp"
+            android:textColor="#6c0200"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            tools:text="Cocker Spaniel" />
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:marqueeRepeatLimit="marquee_forever"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
             android:textSize="20sp"
-            android:marqueeRepeatLimit="marquee_forever"
-            android:singleLine="false"
-
-            />
-        
-
-
+            tools:text="info" />
     </LinearLayout>
-
 </ScrollView>
-
-

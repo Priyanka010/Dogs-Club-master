@@ -15,7 +15,7 @@ import android.view.ViewGroup;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.manishab.straydogsapp.BreedinfoActivity;
+import com.manishab.straydogsapp.CenterDetailActivity;
 import com.manishab.straydogsapp.MapsActivity;
 import com.manishab.straydogsapp.R;
 import com.manishab.straydogsapp.model.Center;
@@ -51,30 +51,24 @@ public class CenterFragment extends Fragment{
         rvCenter.setAdapter(new FirebaseRecyclerAdapter<Center, CenterViewHolder>(
                 Center.class, R.layout.item_center, CenterViewHolder.class, myRef) {
                                 @Override
-                                public void populateViewHolder(CenterViewHolder holder, Center center, int position) {
+                                public void populateViewHolder(CenterViewHolder holder, final Center center, int position) {
                                     Picasso.with(holder.itemView.getContext()).load(center.getCenter_img()).into(holder.centerImage);
                                     holder.CenterDescription.setText(center.getCenter_info());
                                     holder.CenterName.setText(center.getCenter_name());
-
-                                    holder.itemView.setOnClickListener(new View.OnClickListener(){
-
-
+                                    holder.itemView.setOnClickListener(new View.OnClickListener() {
                                         @Override
                                         public void onClick(View view) {
-                                            Intent intent=new Intent(getActivity(),Center.class);
-                                            Intent.putExtra("Center",center);
+                                            Intent intent = new Intent(getActivity(), CenterDetailActivity.class);
+                                            intent.putExtra("center", center);
                                             startActivity(intent);
                                         }
-
-
                                     });
                                 }
-
-
-
-                            });
+        });
         return root;
     }
+
+
 }
 
     //    myRef.addChildEventListener(new ChildEventListener() {
