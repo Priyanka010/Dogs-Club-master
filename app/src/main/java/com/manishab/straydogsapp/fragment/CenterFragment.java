@@ -61,7 +61,7 @@ public class CenterFragment extends Fragment{
 
                                         @Override
                                         public void onClick(View view) {
-                                            Intent intent=new Intent(getActivity(),BreedinfoActivity.class);
+                                            Intent intent=new Intent(getActivity(),Center.class);
                                             Intent.putExtra("Center",center);
                                             startActivity(intent);
                                         }
