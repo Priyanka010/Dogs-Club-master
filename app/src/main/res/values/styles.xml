@@ -1,9 +1,15 @@
 <resources>
 
+    <!-- Base application theme. -->
     <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="colorPrimary">#CD4904</item>
-        <item name="colorPrimaryDark">#9D1600</item>
-        <item name="colorAccent">#B2DFDB</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#008080</item>
+        <item name="colorPrimaryDark">#008080</item>
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+    <style name="MyTabStyle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textSize">20dp</item>
+
     </style>
 
 </resources>
