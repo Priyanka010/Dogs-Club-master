@@ -14,7 +14,7 @@ public class Contact extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
         TextView textView;
-        textView = (TextView) findViewById(R.id.About);
+        textView = (TextView) findViewById(R.id.contact);
         textView.setText("Mail us at dogsclub101@gmail.com");
     }
 }

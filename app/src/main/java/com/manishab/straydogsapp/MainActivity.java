@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 Intent intent1=new Intent(MainActivity.this,Contact.class);
                 startActivity(intent1);
             default:
-                Toast.makeText(MainActivity.this, "Activity", Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this, " ", Toast.LENGTH_LONG).show();
                 break;
         }
         return true;
