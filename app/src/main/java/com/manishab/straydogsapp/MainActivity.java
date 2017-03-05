@@ -1,5 +1,6 @@
 package com.manishab.straydogsapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
@@ -80,12 +81,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
-            case R.id.about:
-                Toast.makeText(MainActivity.this, "About Activity", Toast.LENGTH_LONG).show();
+            case R.id.About:
+                Intent intent=new Intent(MainActivity.this,AboutUsActivity.class);
+                startActivity(intent);
                 break;
             case R.id.contact:
-                Toast.makeText(MainActivity.this, "Contact Activity", Toast.LENGTH_LONG).show();
-                break;
+                Intent intent1=new Intent(MainActivity.this,Contact.class);
+                startActivity(intent1);
             default:
                 Toast.makeText(MainActivity.this, "Activity", Toast.LENGTH_LONG).show();
                 break;
